@@ -25,7 +25,7 @@ public class LadderClimbing : MonoBehaviour
         }
         else
         {
-            body.gravityScale = 3.5f;
+            body.gravityScale = 4.5f;
         }
     }
 

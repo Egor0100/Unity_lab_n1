@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -12,6 +13,9 @@ public class PlayerMovement : MonoBehaviour
     private float _jumpTimeCounter; // Счетчик времени для прыжка
     private bool _isJumping; // Переменная определяет, находится ли игрок в прыжке
     private float _horizontalInput; // Переменная для ввода игрока (движение по горизонтали)
+    [SerializeField] private LayerMask trampolineLayer;
+    private bool _isMovingLeft;
+    private bool _isMovingRight;
     
 
     // Метод awake для инициализации объекта
@@ -21,12 +25,39 @@ public class PlayerMovement : MonoBehaviour
         _collider = GetComponent<BoxCollider2D>();
     }
 
+    private void OnEnable()
+    {
+        if (_isMovingRight)
+            _isMovingRight = false;
+        else if (_isMovingLeft)
+            _isMovingLeft = false;
+    }
+    
     // Метод Update вызывается каждый кадр
     private void Update()
     {
         _horizontalInput = Input.GetAxis("Horizontal"); 
-        _body.linearVelocity = new Vector2(_horizontalInput * speed, _body.linearVelocity.y);
+       
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            _isMovingRight = true;
+            _isMovingLeft = false;
+        }
+        else if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            _isMovingLeft = true;
+            _isMovingRight = false;
+        }
 
+        if (Input.GetKeyUp(KeyCode.RightArrow))
+        {
+            _isMovingRight = false;
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftArrow))
+        {
+            _isMovingLeft = false;
+        }
+        
         // Поворот спрайта персонажа в зависимости от того, куда он движется
         if (_horizontalInput > 0.01f)
             transform.localScale = new Vector3(0.15f, 0.25f, 0.15f);
@@ -36,29 +67,26 @@ public class PlayerMovement : MonoBehaviour
         // Прыжок, если нажат пробел и персонаж в это время находится на земле
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
-            _isJumping = true;
-            _jumpTimeCounter = 0.25f; // Максимальное время удержания прыжка
             Jump();
         }
-
-        // Если пробел удерживается, продолжаем увеличивать силу прыжка
-        if (Input.GetKey(KeyCode.Space) && _isJumping)
+        
+        if (OnTrampoline())
+            _body.linearVelocity = new Vector2(_body.linearVelocity.x, jumpForce * 1.8f);
+    }
+    
+    private void FixedUpdate()
+    {
+        if (_isMovingRight)
         {
-            if (_jumpTimeCounter > 0)
-            {
-                _body.linearVelocity = new Vector2(_body.linearVelocity.x, jumpForce);
-                _jumpTimeCounter -= Time.deltaTime;
-            }
-            else
-            {
-                _isJumping = false;
-            }
+            _body.linearVelocity = new Vector2(speed, _body.linearVelocity.y);
         }
-
-        // Если пробел отпущен, прекращаем прыжок
-        if (Input.GetKeyUp(KeyCode.Space))
+        else if (_isMovingLeft)
         {
-            _isJumping = false;
+            _body.linearVelocity = new Vector2(-speed, _body.linearVelocity.y);
+        }
+        else
+        {
+            _body.linearVelocity = new Vector2(0, _body.linearVelocity.y);
         }
     }
     
@@ -72,5 +100,17 @@ public class PlayerMovement : MonoBehaviour
     {
         RaycastHit2D raycastHit = Physics2D.BoxCast(_collider.bounds.center, _collider.bounds.size, 0f, Vector2.down, 0.1f, groundLayer);
         return raycastHit.collider != null;
+    }
+
+    private bool OnTrampoline()
+    {
+        RaycastHit2D raycastHit = Physics2D.BoxCast(_collider.bounds.center, _collider.bounds.size, 0f, Vector2.down, 0.1f, trampolineLayer);
+
+        if (raycastHit.collider != null && _body.linearVelocity.y < 0)
+        {
+            return true;
+        }
+
+        return false;
     }
 }

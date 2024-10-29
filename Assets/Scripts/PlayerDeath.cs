@@ -4,6 +4,7 @@ public class PlayerDeath : MonoBehaviour
 {
     private Vector3 _startPosition;
     public GameObject fallDetector;
+    private PlayerMovement _playerMovement;
     
     void Awake()
     {
