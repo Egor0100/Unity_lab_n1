@@ -50,7 +50,7 @@ public class DoubleJumping : MonoBehaviour
             {
                 obj.SetActive(false);
             }
-            else if (Time.time - startTime >= 1f && !obj.activeSelf)
+            else if (Time.time - startTime >= 1.3f && !obj.activeSelf)
             {
                 obj.SetActive(true);
                 objectsToRemove.Add(obj);

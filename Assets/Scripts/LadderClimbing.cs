@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class LadderClimbing : MonoBehaviour
 {
@@ -25,7 +24,7 @@ public class LadderClimbing : MonoBehaviour
         }
         else
         {
-            body.gravityScale = 4.5f;
+            body.gravityScale = 5f;
         }
     }
 

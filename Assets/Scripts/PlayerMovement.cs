@@ -1,7 +1,4 @@
-using System;
-using Unity.VisualScripting;
 using UnityEngine;
-
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -10,14 +7,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer; // Слой для земли
     private Rigidbody2D _body; // Компонент Rigidbody
     private BoxCollider2D _collider; // Компонент Boxcollider
-    private float _jumpTimeCounter; // Счетчик времени для прыжка
-    private bool _isJumping; // Переменная определяет, находится ли игрок в прыжке
     private float _horizontalInput; // Переменная для ввода игрока (движение по горизонтали)
     [SerializeField] private LayerMask trampolineLayer;
     private bool _isMovingLeft;
     private bool _isMovingRight;
     
-
     // Метод awake для инициализации объекта
     private void Awake()
     {
@@ -50,13 +44,9 @@ public class PlayerMovement : MonoBehaviour
         }
 
         if (Input.GetKeyUp(KeyCode.RightArrow))
-        {
             _isMovingRight = false;
-        }
         else if (Input.GetKeyUp(KeyCode.LeftArrow))
-        {
             _isMovingLeft = false;
-        }
         
         // Поворот спрайта персонажа в зависимости от того, куда он движется
         if (_horizontalInput > 0.01f)
@@ -66,28 +56,20 @@ public class PlayerMovement : MonoBehaviour
 
         // Прыжок, если нажат пробел и персонаж в это время находится на земле
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
-        {
             Jump();
-        }
         
         if (OnTrampoline())
-            _body.linearVelocity = new Vector2(_body.linearVelocity.x, jumpForce * 1.8f);
+            _body.linearVelocity = new Vector2(_body.linearVelocity.x, jumpForce * 1.35f);
     }
     
     private void FixedUpdate()
     {
         if (_isMovingRight)
-        {
             _body.linearVelocity = new Vector2(speed, _body.linearVelocity.y);
-        }
         else if (_isMovingLeft)
-        {
             _body.linearVelocity = new Vector2(-speed, _body.linearVelocity.y);
-        }
         else
-        {
             _body.linearVelocity = new Vector2(0, _body.linearVelocity.y);
-        }
     }
     
     private void Jump()
@@ -107,9 +89,7 @@ public class PlayerMovement : MonoBehaviour
         RaycastHit2D raycastHit = Physics2D.BoxCast(_collider.bounds.center, _collider.bounds.size, 0f, Vector2.down, 0.1f, trampolineLayer);
 
         if (raycastHit.collider != null && _body.linearVelocity.y < 0)
-        {
             return true;
-        }
 
         return false;
     }
