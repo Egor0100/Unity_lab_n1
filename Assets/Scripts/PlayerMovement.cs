@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -60,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
             Jump();
         
         if (OnTrampoline())
-            _body.linearVelocity = new Vector2(_body.linearVelocity.x, jumpForce * 1.6f);
+            _body.linearVelocity = new Vector2(_body.linearVelocity.x, jumpForce * 1.35f);
     }
     
     private void FixedUpdate()
