@@ -144,6 +144,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -534,7 +547,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fireball_Hit_0: 4911183739235792331
+      Fireball_Hit_1: -2298478580232849757
+      Fireball_Hit_10: 6757656019943165329
+      Fireball_Hit_11: -6428539586204863625
+      Fireball_Hit_12: -2088947184653339907
+      Fireball_Hit_13: -7936333236167605729
+      Fireball_Hit_14: 8273195622033267117
+      Fireball_Hit_15: -2113347695178138329
+      Fireball_Hit_16: -2865908886044087933
+      Fireball_Hit_2: 6019108103128323948
+      Fireball_Hit_3: -4087103898778752659
+      Fireball_Hit_4: 6278966115479230552
+      Fireball_Hit_5: -4044690301930030442
+      Fireball_Hit_6: -6008723567779791844
+      Fireball_Hit_7: -7666826251463478812
+      Fireball_Hit_8: -6821223055848319690
+      Fireball_Hit_9: 5873204291812309171
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

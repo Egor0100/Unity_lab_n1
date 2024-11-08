@@ -11,12 +11,14 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask trampolineLayer;
     private bool _isMovingLeft;
     private bool _isMovingRight;
+    private Animator _animator;
     
     // Метод awake для инициализации объекта
     private void Awake()
     {
         _body = GetComponent<Rigidbody2D>();
         _collider = GetComponent<BoxCollider2D>();
+        _animator = GetComponent<Animator>();
     }
 
     private void OnEnable()
@@ -50,9 +52,9 @@ public class PlayerMovement : MonoBehaviour
         
         // Поворот спрайта персонажа в зависимости от того, куда он движется
         if (_horizontalInput > 0.01f)
-            transform.localScale = new Vector3(0.15f, 0.25f, 0.15f);
+            transform.localScale = new Vector3(0.17f, 0.17f, 0.17f);
         else if (_horizontalInput < -0.01f)
-            transform.localScale = new Vector3(-0.15f, 0.25f, 0.15f);
+            transform.localScale = new Vector3(-0.17f, 0.17f, 0.17f);
 
         // Прыжок, если нажат пробел и персонаж в это время находится на земле
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
@@ -60,6 +62,8 @@ public class PlayerMovement : MonoBehaviour
         
         if (OnTrampoline())
             _body.linearVelocity = new Vector2(_body.linearVelocity.x, jumpForce * 1.35f);
+        
+        _animator.SetBool("Run", _isMovingRight || _isMovingLeft);
     }
     
     private void FixedUpdate()

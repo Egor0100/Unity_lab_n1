@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: e4258f146823ef340bbb4ade29d90f27
+guid: 466e7891c439773448db22f64fc34014
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8756975686026638912
-    second: Enemy1_Idle_0
+      213: -948320207322480436
+    second: Player_Walking_0
   - first:
-      213: -4299391206175629328
-    second: Enemy1_Idle_1
+      213: 5857282858584149246
+    second: Player_Walking_1
   - first:
-      213: 231342158942939844
-    second: Enemy1_Idle_2
+      213: 2651518981183496940
+    second: Player_Walking_2
   - first:
-      213: -984647149672950222
-    second: Enemy1_Idle_3
+      213: -6909621036297029691
+    second: Player_Walking_3
   - first:
-      213: -4680652744341900876
-    second: Enemy1_Idle_4
+      213: -5146876362037719645
+    second: Player_Walking_4
   - first:
-      213: 5627259558588835327
-    second: Enemy1_Idle_5
+      213: -9204694156731633846
+    second: Player_Walking_5
   - first:
-      213: -1822212402033230758
-    second: Enemy1_Idle_6
+      213: 5556712380565055971
+    second: Player_Walking_6
   - first:
-      213: 7951270709815472972
-    second: Enemy1_Idle_7
+      213: 1933891256229399822
+    second: Player_Walking_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -117,181 +117,194 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy1_Idle_0
+      name: Player_Walking_0
       rect:
         serializedVersion: 2
         x: 325
-        y: 197
+        y: 236
         width: 641
-        height: 725
+        height: 880
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 160}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 046b9507df6078970800000000000000
-      internalID: 8756975686026638912
+      spriteID: cc0083dbbc3e6d2f0800000000000000
+      internalID: -948320207322480436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy1_Idle_1
+      name: Player_Walking_1
       rect:
         serializedVersion: 2
         x: 1144
-        y: 266
+        y: 262
         width: 641
-        height: 725
+        height: 853
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 147}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0ff96752a7e7554c0800000000000000
-      internalID: -4299391206175629328
+      spriteID: efc84e60abf394150800000000000000
+      internalID: 5857282858584149246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy1_Idle_2
+      name: Player_Walking_2
       rect:
         serializedVersion: 2
-        x: 1940
-        y: 353
+        x: 1937
+        y: 323
         width: 641
-        height: 725
+        height: 792
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 91}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4caad55c774e53300800000000000000
-      internalID: 231342158942939844
+      spriteID: ce2e5ac07761cc420800000000000000
+      internalID: 2651518981183496940
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy1_Idle_3
+      name: Player_Walking_3
       rect:
         serializedVersion: 2
         x: 2801
-        y: 266
+        y: 252
         width: 641
-        height: 725
+        height: 863
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 147}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 23694ae52a4d552f0800000000000000
-      internalID: -984647149672950222
+      spriteID: 5c7f2f6b6481c10a0800000000000000
+      internalID: -6909621036297029691
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy1_Idle_4
+      name: Player_Walking_4
       rect:
         serializedVersion: 2
         x: 1054
-        y: 270
+        y: 309
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4b13b80d02bfa0fb0800000000000000
-      internalID: -4680652744341900876
+      spriteID: 3ad03e1d73f9298b0800000000000000
+      internalID: -5146876362037719645
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy1_Idle_5
+      name: Player_Walking_5
       rect:
         serializedVersion: 2
         x: 235
-        y: 201
+        y: 240
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ff5eb9801ca081e40800000000000000
-      internalID: 5627259558588835327
+      spriteID: a4fa5e9de6b524080800000000000000
+      internalID: -9204694156731633846
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy1_Idle_6
+      name: Player_Walking_6
       rect:
         serializedVersion: 2
         x: 895
-        y: 190
+        y: 229
         width: 11
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a5c7f7f897336b6e0800000000000000
-      internalID: -1822212402033230758
+      spriteID: 3e9689a28786d1d40800000000000000
+      internalID: 5556712380565055971
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy1_Idle_7
+      name: Player_Walking_7
       rect:
         serializedVersion: 2
         x: 2140
-        y: 160
+        y: 199
         width: 117
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c43f48b3596985e60800000000000000
-      internalID: 7951270709815472972
+      spriteID: e0d89c1f9df86da10800000000000000
+      internalID: 1933891256229399822
       vertices: []
       indices: 
       edges: []
@@ -300,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 007b84dffec8e43d8ab58673cb1a65b8
     internalID: 0
     vertices: []
     indices: 
@@ -309,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Player_Walking_0: -948320207322480436
+      Player_Walking_1: 5857282858584149246
+      Player_Walking_2: 2651518981183496940
+      Player_Walking_3: -6909621036297029691
+      Player_Walking_4: -5146876362037719645
+      Player_Walking_5: -9204694156731633846
+      Player_Walking_6: 5556712380565055971
+      Player_Walking_7: 1933891256229399822
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
