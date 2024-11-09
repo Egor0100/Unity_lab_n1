@@ -6,6 +6,7 @@ public class FireballScript : MonoBehaviour
     [SerializeField] private float force;
     private float _timer;
     private Vector3 _direction;
+    private float _rotation;
     
     void Start()
     {
@@ -16,10 +17,9 @@ public class FireballScript : MonoBehaviour
         {
             _direction = _player.transform.position - transform.position;
             _body.linearVelocity = new Vector2(_direction.x, _direction.y).normalized * force;
+            _rotation = Mathf.Atan2(-_direction.y, -_direction.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0, 0, _rotation + 90);
         }
-
-        float rotation = Mathf.Atan2(-_direction.y, -_direction.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, rotation + 90);
     }
     
     void Update()
