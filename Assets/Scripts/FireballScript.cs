@@ -26,7 +26,7 @@ public class FireballScript : MonoBehaviour
     {
         _timer += Time.deltaTime;
         
-        if (_timer > 10)
+        if (_timer > 6f)
             Destroy(this.gameObject);
     }
 
