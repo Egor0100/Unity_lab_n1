@@ -7,7 +7,7 @@ public class LevelEnd : MonoBehaviour
     private void Start()
     {
         // Находим объект GameManager на сцене
-        _gameManager = FindObjectOfType<GameManager>();
+        _gameManager = FindFirstObjectByType<GameManager>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)

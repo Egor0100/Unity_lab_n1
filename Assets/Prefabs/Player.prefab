@@ -199,7 +199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95a7f4148066a49f2821ec7b698a2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallDetector: {fileID: 0}
+  fallDetector: {fileID: 7336398699290235527, guid: eb32233409c2a4fec84f56e5e1d61984, type: 3}
 --- !u!114 &2996464096712030566
 MonoBehaviour:
   m_ObjectHideFlags: 0
