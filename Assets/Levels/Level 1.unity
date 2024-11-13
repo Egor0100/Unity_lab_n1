@@ -1931,8 +1931,8 @@ Transform:
   m_GameObject: {fileID: 235144467}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 80.82, y: 6.09, z: 0.03268369}
-  m_LocalScale: {x: 3.67006, y: 0.525, z: 1}
+  m_LocalPosition: {x: 81.0054, y: 6.09, z: 0.03268369}
+  m_LocalScale: {x: 4.0407357, y: 0.525, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3343,7 +3343,7 @@ Transform:
   m_GameObject: {fileID: 408982230}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.3, y: -1.9, z: 0}
+  m_LocalPosition: {x: 2.9, y: -1.74, z: 0}
   m_LocalScale: {x: 0.17, y: 0.17, z: 0.17}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6578,8 +6578,8 @@ Transform:
   m_GameObject: {fileID: 771661024}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 82.7198, y: 1.4278, z: 0}
-  m_LocalScale: {x: 0.65521586, y: 9.850417, z: 1}
+  m_LocalPosition: {x: 82.7198, y: 1.4145, z: 0}
+  m_LocalScale: {x: 0.65521586, y: 9.823773, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1462853574}
@@ -12731,6 +12731,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7408019551944234810, guid: 7cd7e224758224b08a8bf8d5d51b3bd4, type: 3}
   m_PrefabInstance: {fileID: 2056250185}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1623919612
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1623919614}
+  - component: {fileID: 1623919613}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1623919613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623919612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f1408c7c988aae4183948b75227d6ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1623919614
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623919612}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.744509, y: 5.7654667, z: -0.88097006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1629929448
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13058,8 +13102,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 98136132407003397, guid: 012fa080b51744f898158c00fc9bb703, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1680368211}
   m_SourcePrefab: {fileID: 100100000, guid: 012fa080b51744f898158c00fc9bb703, type: 3}
+--- !u!1 &1680368210 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 98136132407003397, guid: 012fa080b51744f898158c00fc9bb703, type: 3}
+  m_PrefabInstance: {fileID: 1680368209}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1680368211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680368210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84ba8f850be412a4ea1880114e74f203, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1680895298 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7408019551944234810, guid: 7cd7e224758224b08a8bf8d5d51b3bd4, type: 3}
@@ -15639,3 +15703,4 @@ SceneRoots:
   - {fileID: 1680368209}
   - {fileID: 1929877603}
   - {fileID: 408685128}
+  - {fileID: 1623919614}
