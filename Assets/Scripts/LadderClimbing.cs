@@ -3,9 +3,9 @@ using UnityEngine;
 public class LadderClimbing : MonoBehaviour
 {
     [SerializeField] private float climbSpeed;
-    private bool _isLadder;
-    private bool _isClimbing;
-    [SerializeField] private Rigidbody2D body;
+    private bool _isLadder; // Проверка на столкновение игрока с лестницей
+    private bool _isClimbing; // Проверка на то, забирается ли игрок по лестнице
+    [SerializeField] private Rigidbody2D body; // Ссылка на rigidbody2d игрока
 
     void Update()
     {
@@ -19,7 +19,7 @@ public class LadderClimbing : MonoBehaviour
     {
         if (_isClimbing)
         {
-            body.gravityScale = 0f;
+            body.gravityScale = 0f; // Обнуление гравитации, пока игрок забирается по лестнице
             body.linearVelocity = new Vector2(body.linearVelocity.x * 0.7f, climbSpeed);
         }
         else

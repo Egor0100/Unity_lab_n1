@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class ShootingEnemy : MonoBehaviour
 {
-    public GameObject bullet;
-    public Transform bulletPos;
-    private float _timer;
-    private GameObject _player;
-
+    public GameObject bullet; // Ссылка на объект Fireball
+    public Transform bulletPos; // Позиция, с которой появляются файрболлы
+    private float _timer; // Таймер для появления файрболлов с интервалом 1 с.
+    private GameObject _player; // Ссылка на объект игрока
+    
     void Start()
     {
         _player = GameObject.FindGameObjectWithTag("Player");
@@ -15,6 +15,7 @@ public class ShootingEnemy : MonoBehaviour
 
     void Update()
     {
+        //Дистанция между игроком и стреляющим врагом
         float distance = Vector2.Distance(transform.position, _player.transform.position);
 
         if (distance < 20f)

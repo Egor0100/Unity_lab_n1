@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
-    private void OnEnable()
+    private void OnEnable() // Фикс бага с автоматическим движением игрока после респавна
     {
         if (_isMovingRight)
             _isMovingRight = false;
@@ -66,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
         _animator.SetBool("Run", _isMovingRight || _isMovingLeft);
     }
     
-    private void FixedUpdate()
+    private void FixedUpdate() //Передвижение игрока влево/вправо
     {
         if (_isMovingRight)
             _body.linearVelocity = new Vector2(speed, _body.linearVelocity.y);
@@ -76,7 +76,7 @@ public class PlayerMovement : MonoBehaviour
             _body.linearVelocity = new Vector2(0, _body.linearVelocity.y);
     }
     
-    private void Jump()
+    private void Jump() //Функция для прыжка
     {
         _body.linearVelocity = new Vector2(_body.linearVelocity.x, jumpForce);
     }
