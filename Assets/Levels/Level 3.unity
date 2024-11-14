@@ -5479,7 +5479,7 @@ GameObject:
   - component: {fileID: 985320851}
   - component: {fileID: 985320853}
   - component: {fileID: 985320852}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wall_6 (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
