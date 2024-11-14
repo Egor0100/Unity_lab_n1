@@ -8811,11 +8811,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8122361019789094960, guid: be348e0de35304857ad8d07d573368a8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.9
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 8122361019789094960, guid: be348e0de35304857ad8d07d573368a8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.2
+      value: 1.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
