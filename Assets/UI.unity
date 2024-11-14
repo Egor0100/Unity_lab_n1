@@ -614,8 +614,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19.067, y: -144.19}
-  m_SizeDelta: {x: 1284.3, y: 161}
+  m_AnchoredPosition: {x: -21.581, y: -192.69}
+  m_SizeDelta: {x: 1279.3, y: 258.01}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1606795087
 MonoBehaviour:
@@ -693,9 +693,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
+  m_Sprite: {fileID: 1799791108539471871, guid: f14c1f83982ca4b0c8226ca791512057, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -747,8 +747,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -170.89, y: -114.88}
-  m_SizeDelta: {x: 342.11, y: 229.75}
+  m_AnchoredPosition: {x: -147.38, y: -141.97}
+  m_SizeDelta: {x: 294.77, y: 196.97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1740485731
 MonoBehaviour:
@@ -826,9 +826,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
+  m_Sprite: {fileID: 5752205741059618767, guid: cb0bfd51f16c75a4394497f825b3fa26, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -880,8 +880,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.07, y: 71.78}
-  m_SizeDelta: {x: 1268.26, y: 163.62}
+  m_AnchoredPosition: {x: -16.07, y: 128.37}
+  m_SizeDelta: {x: 1268.26, y: 276.79}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1866046239
 MonoBehaviour:
@@ -959,9 +959,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
+  m_Sprite: {fileID: 3951619883273923810, guid: 4ce65d3addaa04be8a4aa05516e6e62d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
